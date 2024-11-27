@@ -1,0 +1,834 @@
+/* Отступ и стили для секции отчета */
+.report-section {
+    margin-top: 40px;
+}
+
+/* Стили для заголовка отчета */
+.report-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Стили для изображения отчета */
+.report-image {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+/* Стили для секции отчета, похожие на .price */
+.report-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Заголовок отчета, как в секции бронирования */
+.report-section .sub-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #030305;
+}
+
+/* Основные стили для секции отчета */
+.report-section {
+    overflow: hidden;
+}
+
+.report-section .container {
+    position: relative;
+    padding-bottom: 121px;
+    text-align: center;
+}
+
+/* Заголовок секции отчета */
+.report-section .sub-title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #030305;
+}
+
+/* Flex-расположение для изображения и текста */
+.report-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Секция истории бронирований */
+.history-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.history-section .sub-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #030305;
+}
+
+#booking-history-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#booking-history-table th, #booking-history-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#booking-history-table th {
+    background-color: #4A90E2;
+    color: white;
+}
+
+#booking-history-table td {
+    background-color: #ffffff;
+}
+
+.button-edit, .button-delete {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-edit {
+    background-color: #4CAF50;
+}
+
+.button-delete {
+    background-color: #E74C3C;
+}
+
+.button-edit:hover {
+    background-color: #45a049;
+}
+
+.button-delete:hover {
+    background-color: #c0392b;
+}
+
+
+/* Описание отчета */
+.report-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5D5D5F;
+    max-width: 500px;
+    margin: 0;
+}
+
+/* Стили изображения отчета */
+.report-image {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+
+/* Описание отчета */
+.report-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5d5d5f;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+/* Изображение отчета */
+.price-image {
+    max-width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
+
+#report-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#report-table th {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#report-table td {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.report-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* Описание отчета */
+.report-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Улучшенные стили для таблицы отчета */
+#report-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#report-table th {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    border-right: 2px solid #d1e3f3;
+}
+
+#report-table th:last-child {
+    border-right: none;
+}
+
+#report-table td {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Чередующиеся цвета для строк */
+#report-table tbody tr:nth-child(even) {
+    background-color: #f0f8ff;
+}
+
+#report-table tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Закругленные углы для кнопок и тень */
+.report-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: black;
+}
+
+/* Печать отчета */
+@media print {
+    .report-buttons, .report-image, .report-description {
+        display: none;
+    }
+    #report-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    #report-table th, #report-table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+}
+
+
+
+
+/* Сброс стилей */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Подключение шрифтов */
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Roboto.ttf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("../fonts/Robotobold.ttf");
+    font-weight: bold;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Стили для шапки сайта */
+.header {
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Form Title Styling */
+.sub-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between the registration and login forms */
+    margin-top: 40px;
+}
+
+.auth-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Fixed width for each form */
+    text-align: center;
+}
+
+.auth-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auth-form button:hover {
+    background-color: #333;
+}
+
+.switch-text {
+    margin-top: 10px;
+}
+
+/* Switch Text Styling */
+.switch-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.switch-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+
+.header{
+    border-bottom: 1px solid #E5E5E5;
+    padding: 25px 0;
+
+}
+/* .container{
+    max-width: 1100px;
+    margin: 0 auto;
+} */
+
+.header .container{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    vertical-align: bottom;
+}
+.menu{
+    margin-left: 244px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.menu-item{
+    margin-right: 115px;
+}
+.menu-item a{
+    font-size: 15px;
+    color: #030305;
+;
+    text-decoration: none;
+}
+.menu-item a:hover{
+    border-bottom: 2px solid black;
+}
+
+.main{
+    background-image: url("../images/background.png");
+    background-position: center;
+    background-size: cover;
+    padding: 104px 0 154px 0;
+}
+
+.main-info{
+    max-width: 855px
+}
+
+.main-title{
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 110%;
+    color: #030305;
+    margin-bottom: 40px;
+}
+.main-text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #030305;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.button{
+    padding: 20px;
+    width: 334px;
+    height: 64px;
+    background: #030305;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: background-color .5s;
+}
+.button:hover{
+    background: #575757;
+    cursor: pointer;
+}
+
+.car{
+    padding: 100px 0;
+}
+.sub-title{
+    font-size: 60px;
+    line-height: 70px;
+    color: #030305;
+    font-weight: bold;
+}
+
+.car-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.car-item{
+    max-width: 384px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.car-item-image:hover img {
+    transform: scale(1.1);
+}
+.car-item-image img {
+    vertical-align: bottom;
+    transition: all .3s;
+}
+
+.car-item-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #030305;
+    padding: 15px 0 17px 0;
+}
+
+.car-item-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-item-point{
+    width: 110px;
+    height: 92px;
+    margin: 0 7.5px;
+}
+
+.car-item-point img{
+    margin-bottom: 11px;
+}
+
+.car-item-action{
+    margin-top: 13px;
+}
+.car-item-action .button{
+    width: 100%;
+    padding: 15px;
+    height: 54px;
+}
+
+.car-item-point > div:nth-child(2) {
+    font-weight: bold;
+}
+
+
+/* Container for booking form and table */
+.booking-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px; /* Space between form and table */
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+/* Style for booking form */
+.booking-form {
+    flex: 1;
+    max-width: 400px;
+}
+
+.booking-form h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #030305;
+    margin-bottom: 20px;
+}
+
+/* Ensure the table section also fits within the flex container */
+#booked-cars {
+    flex: 2;
+}
+
+/* Styling adjustments for table as before */
+#booked-cars-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#booked-cars-table th {
+    background-color: #030305;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+}
+
+#booked-cars-table td {
+    padding: 10px;
+    font-size: 14px;
+    color: #5D5D5F;
+    border: 1px solid #e5e5e5;
+}
+
+#booked-cars-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Стили для таблицы и кнопок */
+#booking-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#booking-history-table th, #booking-history-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#booking-history-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.button-edit, .button-delete {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.button-edit {
+    background-color: #4CAF50; /* Зеленая кнопка для редактирования */
+}
+
+.button-edit:hover {
+    background-color: #45a049;
+}
+
+.button-delete {
+    background-color: #f44336; /* Красная кнопка для удаления */
+}
+
+.button-delete:hover {
+    background-color: #d32f2f;
+}
+
+
+/* Adjust inputs and button to match overall project style */
+.price-form .price-input, .price-form .button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+/* Center the booked cars section and table */
+#booked-cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* Style the table headers to look like buttons */
+#booked-cars-table th {
+    background-color: #FFFFFF;
+    color: #030305;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#booked-cars-table th:hover {
+    background-color: #575757;
+}
+
+/* Style each table cell */
+#booked-cars-table td {
+    padding: 10px;
+    font-size: 14px;
+    color: #5D5D5F;
+    border: 1px solid #e5e5e5;
+}
+
+/* Style for the table rows */
+#booked-cars-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#booked-cars-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style for the section header */
+#booked-cars h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #030305;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+#booking-summary {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+#booking-summary h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #030305;
+    margin-bottom: 15px;
+}
+
+#booking-summary p {
+    font-size: 16px;
+    color: #5D5D5F;
+    margin: 5px 0;
+}
+    
+#booked-cars {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    max-width: 650px;
+}
+
+#booked-cars h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #030305;
+    margin-bottom: 15px;
+}
+
+#booked-cars-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.booking-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.booking-item hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 10px 0;
+}
+
+
+.price{
+    overflow: hidden;
+}
+.price .container{
+    position: relative;
+    padding-bottom: 121px;
+}
+
+.price .sub-title{
+    margin-bottom: 20px;
+}
+
+.price-text{
+    font-size: 16px;
+    line-height: 130%;
+    color: #5D5D5F;
+    margin-bottom: 60px;
+}
+.price-form{
+    max-width: 344px;
+}
+
+.price-input{
+    padding: 22px 18px;
+    width: 344px;
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #5D5D5F;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #000000;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.price-input::placeholder {
+    color: #5D5D5F;
+}
+
+.price .button{
+    width: 100%;
+}
+
+.price-image{
+    position: absolute;
+    bottom: 0;
+    left: 401px;
+}
+
+.footer{
+    border-top: 1px solid #E5E5E5;
+    padding: 25px 0;
+}
+.footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rights{
+    font-size: 15px;
+    color: #030305;
+}

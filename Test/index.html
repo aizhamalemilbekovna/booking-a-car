@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Аренда премиальных автомобилей</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="auth-container">
+    <!-- Registration Section -->
+    <section id="registration" class="auth-section">
+        <h2 class="sub-title">Регистрация</h2>
+        <form class="auth-form" id="register-form">
+            <input type="text" id="reg-username" class="auth-input" placeholder="Имя пользователя" required>
+            <input type="password" id="reg-password" class="auth-input" placeholder="Пароль" required>
+            <button type="button" class="button" id="register-button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
+        <p class="switch-text">Уже есть аккаунт? <a href="#" id="to-login">Войти</a></p>
+    </section>
+
+    <!-- Login Section -->
+    <section id="login" class="auth-section" style="display: none;">
+        <h2 class="sub-title">Вход</h2>
+        <form class="auth-form" id="login-form">
+            <input type="text" id="login-username" class="auth-input" placeholder="Имя пользователя" required>
+            <input type="password" id="login-password" class="auth-input" placeholder="Пароль" required>
+            <button type="button" class="button" id="login-button">ВОЙТИ</button>
+        </form>
+        <p class="switch-text">Нет аккаунта? <a href="#" id="to-register">Зарегистрироваться</a></p>
+    </section>
+</div>
+
+<!-- User Dashboard (hidden until login) -->
+<section id="dashboard" style="display: none;">
+    <div class="container">
+        <h2>Добро пожаловать, <span id="welcome-username"></span>!</h2>
+        <button class="button" id="logout-button">Выйти</button>
+
+        <header class="header">
+            <div class="container"> 
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <nav class="menu">
+                    <ul>
+                        <li class="menu-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#cars">Автомобили</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#booked-cars">Бронирование авто</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div class="container">
+                <div class="main-info">
+                    <h1 class="main-title">Аренда премиальных автомобилей</h1>
+                    <div class="main-text">
+                        В нашем клубе имеется солидная коллекция спортивных автомобилей — от достаточно распространенных
+                        серийных машин до настоящего гоночного эксклюзива. Воспользуйтесь уникальной возможностью побывать за
+                        рулем настоящей легенды и узнать, на что она способна за пределами гоночной трассы!
+                    </div>
+                    <div class="main-action">
+                        <button class="button" id="main-action">
+                            Посмотреть автомобили
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="car" id="cars">
+            <div class="container">
+                <h2 class="sub-title">Наш автопарк</h2>
+                <div class="car-items">
+                    <div class="car-item">
+                        <div class="car-item-image">
+                            <img src="images/1.png" alt="Image 1">
+                        </div>
+                        <div class="car-item-title">Lamborghini Huracan Spyder</div>
+                        <div class="car-item-info">
+                            <div class="car-item-point">
+                                <img src="images/gear.png" alt="Gear">
+                                <div>Привод</div>
+                                <div>полный</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group.png" alt="Group">
+                                <div>Двигатель</div>
+                                <div>5.2 л.с.</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group%20(1).png" alt="Group(1)">
+                                <div>Кол-во мест</div>
+                                <div>2</div>
+                            </div>
+                            </div>
+                            <div class="car-item-action">
+                                <button class="button car-button">Забронировать</button>
+                            </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-image">
+                            <img src="images/2.png" alt="Image 2">
+                        </div>
+                        <div class="car-item-title">Chevrolet Corvette</div>
+                        <div class="car-item-info">
+                            <div class="car-item-point">
+                                <img src="images/gear.png" alt="Gear">
+                                <div>Привод</div>
+                                <div>полный</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group.png" alt="Group">
+                                <div>Двигатель</div>
+                                <div>6.2 л.с.</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group%20(1).png" alt="Group(1)">
+                                <div>Кол-во мест</div>
+                                <div>2</div>
+                            </div>
+                        </div>
+                        <div class="car-item-action">
+                            <button class="button car-button">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-image">
+                            <img src="images/3.png" alt="Image 3">
+                        </div>
+                        <div class="car-item-title">Ferrari California</div>
+                        <div class="car-item-info">
+                            <div class="car-item-point">
+                                <img src="images/gear.png" alt="Gear">
+                                <div>Привод</div>
+                                <div>полный</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group.png" alt="Group">
+                                <div>Двигатель</div>
+                                <div>3.9 л.с.</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group%20(1).png" alt="Group(1)">
+                                <div>Кол-во мест</div>
+                                <div>4</div>
+                            </div>
+                        </div>
+                        <div class="car-item-action">
+                            <button class="button car-button">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-image">
+                            <img src="images/4.png" alt="Image 4">
+                        </div>
+                        <div class="car-item-title">Lamborghini Urus</div>
+                        <div class="car-item-info">
+                            <div class="car-item-point">
+                                <img src="images/gear.png" alt="Gear">
+                                <div>Привод</div>
+                                <div>полный</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group.png" alt="Group">
+                                <div>Двигатель</div>
+                                <div>4.0 л.с.</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group%20(1).png" alt="Group(1)">
+                                <div>Кол-во мест</div>
+                                <div>5</div>
+                            </div>
+                        </div>
+                        <div class="car-item-action">
+                            <button class="button car-button">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-image">
+                            <img src="images/5.png" alt="Image 5">
+                        </div>
+                        <div class="car-item-title">Audi R8</div>
+                        <div class="car-item-info">
+                            <div class="car-item-point">
+                                <img src="images/gear.png" alt="Gear">
+                                <div>Привод</div>
+                                <div>полный</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group.png" alt="Group">
+                                <div>Двигатель</div>
+                                <div>5.2 л.с.</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group%20(1).png" alt="Group(1)">
+                                <div>Кол-во мест</div>
+                                <div>2</div>
+                            </div>
+                        </div>
+                        <div class="car-item-action">
+                            <button class="button car-button">Забронировать</button>
+                        </div>
+                    </div>
+                    <div class="car-item">
+                        <div class="car-item-image">
+                            <img src="images/6.png" alt="Image 6">
+                        </div>
+                        <div class="car-item-title">Аренда Chevrolet Camaro</div>
+                        <div class="car-item-info">
+                            <div class="car-item-point">
+                                <img src="images/gear.png" alt="Gear">
+                                <div>Привод</div>
+                                <div>полный</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group.png" alt="Group">
+                                <div>Двигатель</div>
+                                <div>2.0 л.с.</div>
+                            </div>
+                            <div class="car-item-point">
+                                <img src="images/Group%20(1).png" alt="Group(1)">
+                                <div>Кол-во мест</div>
+                                <div>4</div>
+                            </div>
+                        </div>
+                        <div class="car-item-action">
+                            <button class="button car-button">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking-section container">
+            <!-- Booking Form Section -->
+            <div class="booking-form">
+                <h3>Забронировать автомобиль</h3>
+                <form action="" class="price-form">
+                    <input type="text" class="price-input" id="name" placeholder="Ваше имя">
+                    <input type="text" class="price-input" id="phone" placeholder="Ваш телефон">
+                    <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует">
+                    <input type="date" class="price-input" id="start-date" placeholder="Дата начала аренды">
+                    <input type="date" class="price-input" id="end-date" placeholder="Дата окончания аренды">
+                    <button class="button" type="button" id="price-action">Забронировать</button>
+                </form>
+            </div>
+
+            <!-- Booked Cars Table Section -->
+            <div id="booked-cars" style="display: none;">
+                <h3>Список забронированных автомобилей</h3>
+                <table id="booked-cars-table" border="1">
+                    <thead>
+                        <tr>
+                            <th>Имя</th>
+                            <th>Телефон</th>
+                            <th>Автомобиль</th>
+                            <th>Дата начала аренды</th>
+                            <th>Дата окончания аренды</th>
+                        </tr>
+                    </thead>
+                    <tbody id="booked-cars-list"></tbody>
+                </table>
+            </div>
+            <!-- <button class="button" id="clear-bookings" style="margin-top: 15px;">Очистить все бронирования</button> -->
+
+        </section>
+
+        <!-- Add this section to display the booking summary -->
+        <section id="booking-summary" style="display: none; margin-top: 20px;">
+            <h3>Подтверждение бронирования</h3>
+            <p id="summary-name"></p>
+            <p id="summary-phone"></p>
+            <p id="summary-car"></p>
+            <p id="summary-start-date"></p>
+            <p id="summary-end-date"></p>
+        </section>
+
+        <!-- Секция истории бронирований -->
+<section class="history-section">
+    <div class="container">
+        <h2 class="sub-title">История Бронирований</h2>
+        <table id="booking-history-table">
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Телефон</th>
+                    <th>Автомобиль</th>
+                    <th>Дата начала</th>
+                    <th>Дата окончания</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody id="booking-history-list">
+                <!-- Данные бронирований будут добавлены сюда с помощью JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+        <!-- Форма бронирования и таблица истории бронирований будут размещены здесь -->
+    
+        <section class="price report-section">
+            <div class="container">
+                <h2 class="sub-title">Отчёт по Бронированным Автомобилям</h2>
+                <div class="report-content">
+                    <img src="images/rolls.png" alt="Rolls" class="report-image">
+                    <p class="report-description">
+                        Здесь представлен полный список бронирований автомобилей, включая контактную информацию и даты аренды.
+                        Вы можете скачать или распечатать этот отчет для дальнейшего использования.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        
+                <div class="container">
+                    <table id="report-table">
+                        <thead>
+                            <tr>
+                                <th>Имя</th>
+                                <th>Телефон</th>
+                                <th>Автомобиль</th>
+                                <th>Дата начала</th>
+                                <th>Дата окончания</th>
+                            </tr>
+                        </thead>
+                        <tbody id="report-list">
+                            <!-- Данные бронирований будут добавлены сюда с помощью JavaScript -->
+                        </tbody>
+                    </table>
+                    <div class="report-buttons">
+                        <button onclick="downloadReport()" class="button">Скачать Отчёт</button>
+                        <button onclick="printReport()" class="button">Распечатать Отчёт</button>
+                    </div>
+                </div>
+    
+        <!-- <section class="price" id="price">
+            <div class="container">
+                <h2 class="sub-title">
+                    Узнать цену и забронировать
+                </h2>
+                <div class="price-text">
+                    Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования
+                </div>
+                <form action="" class="price-form">
+                    <input type="text" class="price-input" id="name" placeholder="Ваше имя">
+                    <input type="text" class="price-input" id="phone" placeholder="Ваш телефон">
+                    <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует">
+                    <button class="button" type="button" id="price-action">Узнать цену</button>
+                </form>
+                <img src="images/rolls.png" alt="Rolls" class="price-image">
+            </div>
+        </section> -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="rights">
+                    Все права защищены
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+<script src="scripts/scrip.js"></script>
+
+</body>
+</html>
